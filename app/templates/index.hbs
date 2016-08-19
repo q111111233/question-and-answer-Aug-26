@@ -1,16 +1,16 @@
-<h1>Welcome to Question and Answer</h1>
+  <h1>Welcome to Question and Answer</h1>
 
-<h1>Questions</h1>
+  <h2>Questions</h2>
 
-<ul>
-  {{#each model.questions as |question|}}
-    <li>
+  <ul>
+    {{#each model.questions as |question|}}
+    <li class="well question">
       <h3>
         {{#link-to 'question' question.id}}{{question.content}}{{/link-to}}
       </h3>
       <p>by {{question.author}}</p>
     </li>
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
 
-{{new-question save='save'}}
+  {{new-question save='save'}}
