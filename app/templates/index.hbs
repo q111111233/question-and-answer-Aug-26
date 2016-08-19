@@ -4,7 +4,12 @@
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</li>
+    <li>
+      <h3>
+        {{#link-to 'question' question.id}}{{question.content}}{{/link-to}}
+      </h3>
+      <p>by {{question.author}}</p>
+    </li>
   {{/each}}
 </ul>
 
