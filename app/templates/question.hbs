@@ -3,9 +3,9 @@
 <ul>
   {{#each model.answers as |answer|}}
     <li>
-      <h3>{{answer.content}}</h3> <p>by {{answer.author}}</p>      
+      <h3>{{answer.content}}</h3> <p>by {{answer.author}}</p>
     </li>
   {{/each}}
 </ul>
-
+{{update-question question=model update="update"}}
 {{new-answer saveAnswer='saveAnswer' question=model}}
