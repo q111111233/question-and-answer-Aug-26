@@ -1,7 +1,8 @@
 # Question-and-answer
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _Ember Exercise for Epicodus, 08.19.2016_
+
+a question and answer message board where a user submits a question and other users can respond with answers.
 
 ## Prerequisites
 
@@ -51,3 +52,8 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+##License
+
+*This software is licensed under the MIT License*
+
+Copyright (c) 2016 **_Bo Zhao_**
