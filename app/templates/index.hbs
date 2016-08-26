@@ -4,7 +4,7 @@
 
 <ul>
   {{#each model.questions as |question|}}
-  <li class="well question">
+  <li class="well question {{if question.onTeam 'taken'}}">
     <h3>
       {{question-no-answer question}} {{#link-to 'question' question.id}}{{question.content}}{{/link-to}}
     </h3>

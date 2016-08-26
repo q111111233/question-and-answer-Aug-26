@@ -1,7 +1,7 @@
 <h1>Favorite Questions:</h1>
 <ul>
   {{#each favoriteQuestions.questions as |question|}}
-  <li>
+  <li class="{{if question.onTeam 'taken'}}">
     {{question.content}}
     <button class="btn btn-danger" {{action 'remove' question}}>remove</button>
   </li>
