@@ -24,5 +24,14 @@ export default Ember.Route.extend({
       question.save();
       this.transitionTo('index');
     },
+    upvote(answer, params){
+      Object.keys(params).forEach(function(key){
+        if(params[key]!==undefined){
+          answer.set(key,params[key]);
+        }
+      });
+      answer.save();
+      this.transitionTo('question');
+    }
   }
 });
