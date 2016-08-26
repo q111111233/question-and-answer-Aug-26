@@ -6,7 +6,7 @@
     {{#each model.questions as |question|}}
     <li class="well question">
       <h3>
-        {{#link-to 'question' question.id}}{{question.content}}{{/link-to}}
+        {{question-no-answer question}} {{#link-to 'question' question.id}}{{question.content}}{{/link-to}}
       </h3>
       <p>by {{question.author}}</p>
     </li>
