@@ -3,6 +3,7 @@
   {{#each favoriteQuestions.questions as |question|}}
   <li>
     {{question.content}}
+    <button class="btn btn-danger" {{action 'remove' question}}>remove</button>
   </li>
   {{/each}}
 </ul>
