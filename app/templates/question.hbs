@@ -3,13 +3,6 @@
 
 {{update-question question=model update="update"}}
 
-<ul>
-  {{#each model.answers as |answer|}}
-    <li class="well">
-      <h3>{{answer.content}}</h3> <p>by {{answer.author}}</p>
-      {{new-upvote answer=answer upvote='upvote'}}
-    </li>
-  {{/each}}
-</ul>
+{{sort-answer answers=model.answers}}
 
 {{new-answer saveAnswer='saveAnswer' question=model}}

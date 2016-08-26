@@ -1,0 +1,8 @@
+<ul>
+  {{#each sortedAnswer as |answer|}}
+    <li class="well">
+      <h3>{{answer.content}}</h3> <p>by {{answer.author}}</p>
+      {{new-upvote answer=answer upvote='upvote'}}
+    </li>
+  {{/each}}
+</ul>
