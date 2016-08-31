@@ -6,3 +6,7 @@ h1 {
 .question{
   background-color: #ccffdd;
 }
+
+.taken{
+  background-color: green;
+}
